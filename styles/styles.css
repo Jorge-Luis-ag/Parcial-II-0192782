@@ -9,7 +9,11 @@ body {
   background-color: #ffffff;
 }
 
+/* align-items: center asegura que el logo y el menú estén alineados a la misma altura */
 .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
   padding: 24px 80px;
 }
 
@@ -17,4 +21,27 @@ body {
   font-size: 28px;
   font-weight: 800;
   color: #1b56fd;
+  line-height: 1; /* Elimina espacio extra arriba/abajo del texto */
+}
+
+/* Menú de enlaces */
+.menu {
+  display: flex;
+  align-items: center; /* Alinea los textos dentro del menú en la misma línea */
+  gap: 30px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #6b7280;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.menu a.activo {
+  color: #111827;
+  font-weight: 700;
+  border-bottom: 2px solid #111827;
+  padding-bottom: 2px;
 }
