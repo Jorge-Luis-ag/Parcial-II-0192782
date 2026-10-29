@@ -1,3 +1,4 @@
+/* Quitar márgenes por defecto */
 * {
   margin: 0;
   padding: 0;
@@ -9,25 +10,22 @@ body {
   background-color: #ffffff;
 }
 
-/* align-items: center asegura que el logo y el menú estén alineados a la misma altura */
+/* Header */
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center; 
-  padding: 24px 80px;
+  align-items: center;
+  padding: 20px 80px;
 }
 
 .logo {
   font-size: 28px;
   font-weight: 800;
   color: #1b56fd;
-  line-height: 1; /* Elimina espacio extra arriba/abajo del texto */
 }
 
-/* Menú de enlaces */
 .menu {
   display: flex;
-  align-items: center; /* Alinea los textos dentro del menú en la misma línea */
   gap: 30px;
 }
 
@@ -36,7 +34,6 @@ body {
   color: #6b7280;
   font-size: 15px;
   font-weight: 500;
-  line-height: 1;
 }
 
 .menu a.activo {
@@ -44,4 +41,66 @@ body {
   font-weight: 700;
   border-bottom: 2px solid #111827;
   padding-bottom: 2px;
+}
+
+.botones {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn-signin {
+  text-decoration: none;
+  color: #111827;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.btn-login {
+  text-decoration: none;
+  background-color: #1b56fd;
+  color: #ffffff;
+  padding: 10px 22px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Estilos de la Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 80px;
+}
+
+.hero-texto {
+  max-width: 480px;
+}
+
+.subtitulo {
+  color: #1b56fd;
+  font-size: 15px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.hero-texto h1 {
+  font-size: 46px;
+  font-weight: 800;
+  color: #111827;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+.hero-texto p {
+  color: #6b7280;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.hero-imagen img {
+  max-width: 500px;
+  height: auto;
 }
